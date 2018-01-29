@@ -221,13 +221,13 @@ void MST_linkage_core(const t_index N, const t_float *const D,
       Z2.append(prev_node, idx2, min);
     }
   }
-  catch (nan_error& e)
+  catch (nan_error& error)
   {
-    e.error_print();
+    error.error_print();
   }
-  catch ()
+  catch (fenv_error& error)
   {
-    e.error_print();
+    error.error_print();
   }
 }
 
