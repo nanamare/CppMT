@@ -223,11 +223,11 @@ void MST_linkage_core(const t_index N, const t_float *const D,
   }
   catch (nan_error& e)
   {
-    error.error_print();
+    e.error_print();
   }
   catch (fenv_error& e)
   {
-    error.error_print();
+    e.error_print();
   }
 }
 
