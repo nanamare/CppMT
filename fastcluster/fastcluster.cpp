@@ -103,7 +103,8 @@ public:
 class nan_error
 {
 
-public:
+public :
+
   nan_error() {}
 
   void error_print()
@@ -115,7 +116,8 @@ public:
 class fenv_error
 {
 
-public:
+public :
+
   fenv_error() {}
 
   void error_print()
